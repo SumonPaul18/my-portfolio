@@ -1,78 +1,104 @@
 name: "Sumon Kumar Paul"
-title: "DevOps & System Engineer"
-image: "/static/images/profile.jpg" # আপনার ছবির পাথ িক করুন
-intro: "Highly capable DevOps Engineer with 9+ years of experience in Cloud Infrastructure, Network Automation, and System Administration."
+title: "DevOps Engineer & System Architect"
+tagline: "Automating Infrastructure | Cloud Native | Network Specialist"
+image: "/static/images/profile.png"
+visitor_count: "12,450+" 
 
 social:
   linkedin: "https://linkedin.com/in/sumonpaul"
   github: "https://github.com/SumonPaul18"
-  email: "sumonpaul461@gmail.com"
+  email: "mailto:sumonpaul461@gmail.com"
 
 hero:
   title: "Hi, I'm Sumon Kumar Paul"
-  intro: "DevOps Engineer | System Architect | Trainer"
-  description: "Specialized in AWS, Kubernetes, Ansible, and Linux Automation. Proven track record in managing critical government and corporate IT infrastructure."
-  resume_link: "/static/resume.pdf" # আপনার রেজুমি PDF এর পাথ
+  intro: "DevOps Engineer & System Architect"
+  description: "Highly capable professional with 9+ years of experience in Cloud Infrastructure, Network Automation, and System Administration."
+  resume_link: "/static/resume.pdf"
 
 about:
   title: "About Me"
-  description: "Versatile System Engineer with extensive management experience in planning, designing, and deploying computer systems. Expert in SDLC, Cloud Computing (AWS/OpenStack), and Corporate Training for organizations like PMO, CID, and MIST."
+  description: "Versatile System Engineer with extensive management experience in planning, designing, and deploying computer systems. Expert in SDLC, Cloud Computing (AWS/OpenStack), and Corporate Training for top-tier organizations like PMO, CID, and MIST."
 
 skills:
-  title: "Technical Proficiencies"
-  skills_list:
+  title: "Technical Arsenal"
+  categories:
     - name: "DevOps & CI/CD"
-      details: "Jenkins, Git/GitHub, Docker, Ansible, Terraform, Selenium, Prometheus, Nagios"
+      icon: "devicon-jenkins-plain colored"
+      list: ["Jenkins", "Git/GitHub", "Docker", "Ansible", "Terraform", "Prometheus", "ArgoCD"]
     - name: "Cloud & Virtualization"
-      details: "AWS (Solutions Architect), OpenStack, Azure, KVM, Hyper-V, VMware, Vagrant"
-    - name: "System & Network Admin"
-      details: "Linux (RHEL/Ubuntu), Windows Server, Cisco/MikroTik Routing, Zabbix, Cacti"
+      icon: "devicon-amazonwebservices-plain-wordmark colored"
+      list: ["AWS", "OpenStack", "Azure", "KVM", "VMware", "Vagrant"]
+    - name: "System & Network"
+      icon: "devicon-linux-plain colored"
+      list: ["Linux (RHEL/Ubuntu)", "Windows Server", "Cisco/MikroTik", "Zabbix", "Cacti"]
     - name: "Automation & Scripting"
-      details: "Python, Bash/Shell, PowerShell, Paramiko, Netmiko, Oracle APEX"
+      icon: "devicon-python-plain colored"
+      list: ["Python", "Bash/Shell", "PowerShell", "Paramiko", "Netmiko"]
     - name: "Database & Mail"
-      details: "Oracle DB 19c, MySQL, MariaDB, Zimbra Mail Server, Exchange"
+      icon: "devicon-oracle-original colored"
+      list: ["Oracle DB 19c", "MySQL", "MariaDB", "Zimbra Mail Server"]
 
 experience:
-  title: "Work Experience"
-  experiences_list:
+  title: "Professional Journey"
+  list:
     - company: "Meghna Cloud BDCCL"
       position: "System Administrator"
       duration: "Feb 2026 - Present"
+      location: "Rahman Tower, Bashundhara Rd, Dhaka"
       description: "Managing national cloud infrastructure and ensuring high availability of government services."
     - company: "Aamra Network Limited"
       position: "DevOps Engineer"
       duration: "Jan 2023 - Jan 2026"
+      location: "Safura Tower, Floor: 12 Banani, Dhaka"
       description: "Led DevOps initiatives, managed CI/CD pipelines, and automated infrastructure using Ansible/Terraform."
     - company: "Kumudini Pharma Limited"
       position: "System Administrator"
       duration: "Aug 2019 - Dec 2022"
+      location: "74, Gulshan Avenue Gulshan-1"
       description: "Managed entire IT infrastructure, server administration, and network security."
     - company: "Creative IT Institute"
       position: "Sr. Technical Trainer"
       duration: "Jul 2018 - Jul 2019"
+      location: "Dhanmondi 4, Dhaka"
       description: "Conducted advanced training on Network Technologies and Linux Administration."
     - company: "Dahmashi Corporation Ltd."
       position: "System Engineer"
       duration: "Jan 2016 - Jun 2018"
+      location: "Banani, Dhaka"
       description: "Designed LAN/WAN networks and managed enterprise routing/switching."
 
 projects:
-  title: "Live Project Experience"
-  projects_list:
+  title: "Featured Projects"
+  list:
     - name: "Bangladesh National Museum"
       description: "Designed and implemented Network Infrastructure and SAN Storage for Central IT Department."
+      image: "https://images.unsplash.com/photo-1565626424178-c699f6601afd?auto=format&fit=crop&q=80&w=800"
+      live_link: "#"
+      code_link: "#"
     - name: "Ministry of Planning"
-      description: "Networking design for 200 nodes using Routers, 24U Rack, and Switches."
+      description: "Networking design for 200 nodes using Routers, 24U Rack, and Enterprise Switches."
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800"
+      live_link: "#"
+      code_link: "#"
     - name: "Ministry of Expatriates' Welfare"
       description: "LAN setup in Fingerprint/Smart Card department and CC Camera surveillance."
+      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800"
+      live_link: "#"
+      code_link: "#"
     - name: "Bangladesh Foreign Trade Institute"
       description: "Complete LAN setup with File Server, CC Camera, and hardware installation."
+      image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=800"
+      live_link: "#"
+      code_link: "#"
     - name: "Janata Bank Limited"
       description: "Network setup and hardware installation across Head Office and branches."
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800"
+      live_link: "#"
+      code_link: "#"
 
-certification:
-  title: "Global Vendor Certifications"
-  certifications_list:
+certifications:
+  title: "Global Certifications"
+  list:
     - name: "AWS Certified Solutions Architect - Associate"
       authority: "Amazon Web Services"
       date: "2026"
@@ -85,22 +111,26 @@ certification:
       authority: "Red Hat"
       date: "2020"
       id: "200-192-508"
+    - name: "Certified Kubernetes Administrator (CKA)"
+      authority: "Page Cloud Academy"
+      date: "2024"
+      id: "N/A"
     - name: "CCNA (Certified Network Associate)"
       authority: "Cisco"
       date: "2015"
       id: "CSCO13622804"
-    - name: "MCSA (Microsoft Certified Solutions Assoc.)"
+    - name: "MCSA (Microsoft Certified Solutions Associate)"
       authority: "Microsoft"
       date: "2016"
       id: "G226-1007"
-    - name: "MTCNA (MikroTIK Certified Network Assoc.)"
+    - name: "MTCNA (MikroTIK Certified Network Associate)"
       authority: "MikroTIK"
       date: "2020"
       id: "2008Nao866"
 
 education:
   title: "Academic Background"
-  educations_list:
+  list:
     - institution: "World University of Bangladesh"
       degree: "B.Sc. in Computer Science"
       duration: "2019"
@@ -109,6 +139,34 @@ education:
       degree: "Diploma in CSE"
       duration: "2015"
       result: "CGPA: 3.28/4"
+
+blog:
+  title: "Latest Insights"
+  list:
+    - title: "Automating Legacy Infrastructure with Ansible"
+      date: "Sep 10, 2026"
+      excerpt: "How I reduced deployment time by 60% at Meghna Cloud using custom Ansible roles."
+      link: "#"
+    - title: "Kubernetes Networking Deep Dive"
+      date: "Aug 25, 2026"
+      excerpt: "Understanding CNI plugins and service mesh implementation in production clusters."
+      link: "#"
+    - title: "Securing OpenStack Deployments"
+      date: "Jul 15, 2026"
+      excerpt: "Best practices for hardening your private cloud environment against modern threats."
+      link: "#"
+
+news_feed:
+  title: "Live Updates & Tech Pulse"
+  list:
+    - type: "project"
+      text: "🚀 Meghna Cloud Migration: Phase 2 completed successfully with 99.99% uptime!"
+    - type: "learning"
+      text: "📚 Currently studying for AWS DevOps Professional certification."
+    - type: "tech"
+      text: "📝 New Article: 'Why I switched from Jenkins to ArgoCD for GitOps'"
+    - type: "status"
+      text: "✅ Lab Update: Proxmox Cluster upgraded to v8.2 with Ceph storage."
 
 contact:
   title: "Get In Touch"

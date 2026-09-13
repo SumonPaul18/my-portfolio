@@ -5,111 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Portfolio{% endblock %}</title>
     
-    <!-- Tailwind CSS CDN -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <script data-goatcounter="https://sumon.cloudola.top/count"
-        async src="//gc.zgo.at/count.js"></script>
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     
-    <!-- Custom Config for Tailwind -->
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#3b82f6',
-                        secondary: '#64748b',
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- Devicon for Tech Logos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #2563eb; }
+        
+        /* Smooth transitions */
+        .tilt-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300">
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-blue-500 selection:text-white">
 
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+    <nav class="fixed w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-white tracking-tighter">SP<span class="text-blue-500">.</span></a>
-            
-            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+            <a href="#" class="text-2xl font-bold tracking-tighter">SP<span class="text-blue-500">.</span></a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
                 <a href="#hero" class="hover:text-blue-400 transition">Hero</a>
-                <a href="#status" class="hover:text-blue-400 transition">Status</a>
-                <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
                 <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+                <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="#blog" class="hover:text-blue-400 transition">Blog</a>
                 <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
             </div>
         </div>
     </nav>
 
     <main>
-        {% block content %}
-        {% endblock %}
+        {% block content %}{% endblock %}
     </main>
 
-    <footer class="bg-slate-900 text-slate-400 py-8 text-center border-t border-slate-800">
+    <footer class="bg-slate-900 border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
         <p>&copy; 2026 {{ config.name }} | Built with Flask & Tailwind</p>
     </footer>
 
-    <!-- Terminal Script -->
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const terminalInput = document.getElementById('terminal-input');
-            const terminalOutput = document.getElementById('terminal-output');
-            
-            if(terminalInput && terminalOutput) {
-                terminalInput.addEventListener('keypress', function(e) {
-                    if (e.key === 'Enter') {
-                        const cmd = this.value.trim().toLowerCase();
-                        let response = '';
-                        
-                        // Command Logic
-                        switch(cmd) {
-                            case 'help': response = 'Commands: whoami, skills, contact, status, clear'; break;
-                            case 'whoami': response = 'Sumon Paul - DevOps Engineer | 9+ Years Exp.'; break;
-                            case 'skills': response = 'AWS, Docker, K8s, Ansible, Terraform, Python, Linux'; break;
-                            case 'contact': response = 'Email: sumonpaul461@gmail.com | LinkedIn: /in/sumonpaul'; break;
-                            case 'status': response = '[✓] All systems operational | Uptime: 99.9%'; break;
-                            case 'clear': 
-                                terminalOutput.innerHTML = '<div class="flex items-center"><span class="mr-2 text-green-500">$</span><input type="text" id="terminal-input" class="bg-transparent border-none outline-none text-white flex-1 font-mono" placeholder="Type help..." autocomplete="off"></div>';
-                                reattachListener();
-                                return;
-                            default: response = `Command not found: ${cmd}. Type 'help'.`;
-                        }
-                        
-                        // Append Command
-                        const cmdLine = document.createElement('div');
-                        cmdLine.className = 'mb-1';
-                        cmdLine.innerHTML = `<span class="text-green-500">$</span> ${this.value}`;
-                        
-                        // Append Response
-                        const respLine = document.createElement('div');
-                        respLine.className = 'mb-3 text-slate-300';
-                        respLine.textContent = response;
-                        
-                        terminalOutput.insertBefore(respLine, terminalOutput.lastElementChild);
-                        terminalOutput.insertBefore(cmdLine, terminalOutput.lastElementChild);
-                        
-                        this.value = '';
-                        terminalOutput.scrollTop = terminalOutput.scrollHeight;
-                    }
-                });
-            }
-
-            function reattachListener() {
-                const newInput = document.getElementById('terminal-input');
-                if(newInput) {
-                    newInput.focus();
-                    newInput.addEventListener('keypress', arguments.callee.caller);
-                }
-            }
+        // Initialize Animations
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100,
+            easing: 'ease-out-cubic'
+        });
+        
+        // Initialize Tilt Effect
+        VanillaTilt.init(document.querySelectorAll(".tilt-card"), {
+            max: 8,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.15,
         });
     </script>
 </body>
