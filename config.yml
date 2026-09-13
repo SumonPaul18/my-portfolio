@@ -23,20 +23,65 @@ skills:
   title: "Technical Arsenal"
   categories:
     - name: "DevOps & CI/CD"
-      icon: "devicon-jenkins-plain colored"
-      list: ["Jenkins", "Git/GitHub", "Docker", "Ansible", "Terraform", "Prometheus", "ArgoCD"]
+      list: 
+        - name: "Jenkins"
+          icon: "devicon-jenkins-plain colored"
+        - name: "Git/GitHub"
+          icon: "devicon-github-original colored"
+        - name: "Docker"
+          icon: "devicon-docker-plain colored"
+        - name: "Ansible"
+          icon: "devicon-ansible-plain colored"
+        - name: "Terraform"
+          icon: "devicon-terraform-plain colored"
+        - name: "Prometheus"
+          icon: "devicon-prometheus-plain colored"
+        - name: "ArgoCD"
+          icon: "fas fa-infinity colored" # Fallback icon
     - name: "Cloud & Virtualization"
-      icon: "devicon-amazonwebservices-plain-wordmark colored"
-      list: ["AWS", "OpenStack", "Azure", "KVM", "VMware", "Vagrant"]
+      list:
+        - name: "AWS"
+          icon: "devicon-amazonwebservices-plain-wordmark colored"
+        - name: "OpenStack"
+          icon: "devicon-openstack-plain colored"
+        - name: "ProxMox"
+          icon: "devicon-proxmox-plain colored"
+        - name: "KVM"
+          icon: "devicon-linux-plain colored"
+        - name: "VMware"
+          icon: "devicon-vmware-plain colored"
+        - name: "Vagrant"
+          icon: "devicon-vagrant-plain colored"
     - name: "System & Network"
-      icon: "devicon-linux-plain colored"
-      list: ["Linux (RHEL/Ubuntu)", "Windows Server", "Cisco/MikroTik", "Zabbix", "Cacti"]
+      list:
+        - name: "Linux"
+          icon: "devicon-redhat-plain colored"
+        - name: "Windows Server"
+          icon: "devicon-windows8-original colored"
+        - name: "Cisco"
+          icon: "devicon-cisco-plain colored"
+        - name: "MikroTik"
+          icon: "fas fa-network-wired colored"
+        - name: "Zabbix"
+          icon: "devicon-zabbix-plain colored"
     - name: "Automation & Scripting"
-      icon: "devicon-python-plain colored"
-      list: ["Python", "Bash/Shell", "PowerShell", "Paramiko", "Netmiko"]
+      list:
+        - name: "Python"
+          icon: "devicon-python-plain colored"
+        - name: "Bash"
+          icon: "devicon-bash-plain colored"
+        - name: "PowerShell"
+          icon: "devicon-powershell-plain colored"
     - name: "Database & Mail"
-      icon: "devicon-oracle-original colored"
-      list: ["Oracle DB 19c", "MySQL", "MariaDB", "Zimbra Mail Server"]
+      list:
+        - name: "Oracle DB"
+          icon: "devicon-oracle-original colored"
+        - name: "MySQL"
+          icon: "devicon-mysql-plain colored"
+        - name: "MariaDB"
+          icon: "devicon-mariadb-plain colored"
+        - name: "Zimbra"
+          icon: "fas fa-envelope colored"
 
 experience:
   title: "Professional Journey"
