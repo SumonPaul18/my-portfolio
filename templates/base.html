@@ -11,8 +11,8 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     
-    <!-- Devicon for Tech Logos -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- Devicon for Tech Logos (FIXED URL) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     
     <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -26,6 +26,9 @@
         
         /* Smooth transitions */
         .tilt-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        
+        /* Fix for Devicon loading delay */
+        i[class^="devicon-"] { opacity: 1 !important; }
     </style>
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased selection:bg-blue-500 selection:text-white">
