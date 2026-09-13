@@ -7,6 +7,7 @@ Portfolio website build using  Flask-Bootstrap5
 
 # How to Deploy My Portfolio on any Host
 
+
 ~~~
 rm -rf skpaul.info
 git clone https://github.com/SumonPaul18/skpaul.info.git
@@ -15,17 +16,6 @@ pip install -r requirements.txt
 python app.py
 ~~~
 
-### Access The Nginx Instance
-~~~
-kubectl get pod
-~~~
-#### Delete all to Nginx-Deploy
-~~~
-kubectl delete deploy skpaul-deployment
-kubectl delete pvc skpaul-nfs-pvc
-kubectl delete pv skpaul-nfs-pv
-kubectl delete svc skpaul-svc
-~~~
 #
 
 ## 📌 Tech Stack
