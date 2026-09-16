@@ -35,10 +35,7 @@
         "name": "Git",
         "icon": "https://img.icons8.com/color/100/000000/git.png"
     },
-    {
-        "name": "VSCode",
-        "icon": "https://img.icons8.com/?size=100&id=48455&format=png&color=000000"
-    },
+
     {
         "name": "CloudFlare",
         "icon": "https://img.icons8.com/color/100/000000/cloudflare.png"
