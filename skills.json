@@ -32,6 +32,10 @@
         "icon": "https://img.icons8.com/color/100/000000/github.png"
     },
     {
+        "name': "Gitlab",
+        "icon": "https://img.icons8.com/color/100/000000/gitlab.png"
+    },
+    {
         "name": "Git",
         "icon": "https://img.icons8.com/color/100/000000/git.png"
     },
