@@ -1,5 +1,9 @@
 [
     {
+        "name": "AWS",
+        "icon": "https://img.icons8.com/?size=90&id=mHi46t5vguiz&format=png&color=000000"
+    },
+    {
         "name": "OpenStack",
         "icon": "https://img.icons8.com/color/100/000000/openstack.png"
     },
@@ -94,10 +98,6 @@
     {
         "name": "PostgreSQL",
         "icon": "https://img.icons8.com/color/48/000000/postgreesql.png"
-    },
-    {
-        "name": "AWS",
-        "icon": "https://img.icons8.com/?size=90&id=mHi46t5vguiz&format=png&color=000000"
     },
     {
         "name": "OracleApex",
