@@ -7,6 +7,10 @@
         "name": "OpenStack",
         "icon": "https://img.icons8.com/color/100/000000/openstack.png"
     },
+    {   
+        "name": "Ceph",
+        "icon": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/ceph.png"
+    },
     {
         "name": "Kubernetes",
         "icon": "https://img.icons8.com/color/100/000000/kubernetes.png"
